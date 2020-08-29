@@ -1,0 +1,115 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+<title>Austin Website</title>
+</head>
+
+	
+		<header class="container-fluid p-3 text-white" id="navBar" style="background-color: black">
+			<div class="pos-f-t" style="background-color: black">
+				<nav class="navbar sticky-top navbar-dark " style="background-color: black">
+					<button class="navbar-toggler hvr-icon-spin" type="button" data-toggle="collapse" data-target="#navbarToggleNavContent" aria-controls="navbarToggleNavContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #990099">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="container">
+						<div class="row" style="width:200%" >
+							<div class="col-lg">
+							</div>
+						</div>
+					</div>		
+				</nav>
+				
+				<div class="container-fluid">
+					<div class="collapse" id="navbarToggleNavContent" align="center" style="z-index: 99999">
+						<div class="row">
+							<div class="col-lg"><a href="index.html" class="btn btn-outline-secondary btn-lg btn-block hvr-shutter-in-horizontal" style="z-index: 99999">Home</a></div>
+							<div class="col-lg"><a href="resume.html" class="btn btn-outline-secondary btn-lg btn-block hvr-shutter-in-horizontal" style="z-index: 99999">Resume</a></div>
+							<div class="col-lg"><a href="https://github.com/andersona151" class="btn btn-outline-secondary btn-lg btn-block hvr-shutter-in-horizontal" style="z-index: 99999">Github</a></div>
+							<div class="col-lg"><span class="btn btn-outline-secondary btn-lg btn-block hvr-shutter-in-horizontal contact-btn" style="z-index: 99999">Contact</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+	<body>
+		
+	  <div id="main" style="background: black">
+			<div class="row justify-content-center" id="content" style="display: block">
+				<span class="overlay hvr-bob" id="mainName">Austin Anderson</span>
+				<span class="overlay hvr-bob" id="myProTitle">Software Developer</span>
+				<span class="bioLinks">
+					<a class="hvr-push" id="emaiLink" aria-label="Send Email" href="mailto:anderson81716@gmail.com">
+						<i class="far fa-envelope fa-4x" id="mailIcon" style="color: white; padding: 15px"></i>
+					</a>
+					<a class="hvr-push" id="LILink" aria-label="LinkedIn" href="https://www.linkedin.com/in/austin-anderson-7a4b18127/">
+						<i class="fab fa-linkedin fa-4x" style="color: white; padding: 15px"></i>
+					</a>
+					<a class="hvr-push" id="resumeDownload" aria-label="Download Resume" href="resume.pdf" download="resume">
+						<i class="fas fa-download fa-3x" style="color: white; padding: 15px"></i>
+					</a>	
+				</span>
+				<br>
+				<h2 class="aboutMe">About Me</h2>
+				<br>
+				<span class="bio">
+					<p class="bioText">I'm a passionate and driven professional in a world run by technology. Experience in automation scripting, CI/CD DevOps habitat, web development and more! 
+					I am always on the lookout for the cutting edge tools, but I am very comfortable using the ones I have the most experience in: Python, Java, AngularJS, Django, SpringBoot, 
+					VBScript, JavaScript, ReactJS, HTML, CSS, Gradle etc!
+					</p>
+				</span>
+				
+				<span class="bio">
+					<p class="bioText">When I am not sharpening my professional skills you can find me enjoying my hobbies: gaming, streaming, working out, music, spending time with friends.</p>
+				</span>
+			</div>
+			
+		</div>
+	
+		
+	</body>
+	
+	<video autoplay muted loop id="myVideo" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden;">
+		<source src="img/PurpleGrid.mp4" type="video/mp4">
+	</video>
+
+		<div>
+		 
+		 <div class="container-fluid" id="footer">
+			<div class="row justify-content-center" style="height: 30px">
+				<span id="copyright">
+					<i class="far fa-copyright" style="color: white; display: inline"></i><p style="color: white; display: inline; font-size: 22px"> 2020 Austin Anderson</p>
+				</span>
+			</div>
+		 </div>
+		
+	  
+			<script src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<script src="https://kit.fontawesome.com/305773b555.js" crossorigin="anonymous"></script>
+			
+			<script>
+			$('.contact-btn').click(function() {
+				var original_color = $('#mailIcon').css('color');
+				var mailIcon = $('#mailIcon');
+				mailIcon.effect('pulsate', {times:3}, 2000);
+			});
+
+			</script>
+			
+		</div>	
+
+
+</html>
